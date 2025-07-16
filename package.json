@@ -1,0 +1,18 @@
+{
+  "name": "node_study",
+  "version": "1.0.0",
+  "description": "- Sintaxe utilizada, é de uma versão mais nova do Node.js, sendo necessário informar no",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node --watch --no-warnings server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^5.4.0"
+  }
+}
