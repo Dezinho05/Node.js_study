@@ -5,7 +5,7 @@ Sintaxe utilizada, é de uma versão mais nova do Node.js, sendo necessário inf
 - Valor: "module"
 
 Para manter o servidor ativo e atualizado a cada alteração: node --watch --no-warnings server.js
-Ou adiciona na seção scripts do package.json.
+Ou adicionar na seção scripts do package.json.
 
 ## Dependências
 1. fastify : npm install fastify
