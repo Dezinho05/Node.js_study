@@ -3,8 +3,8 @@ POST http://localhost:2525/videos
 content-type: application/json
 
 {
-    "title": "Video de nao",
-    "description": "meu video de nao",
+    "title": "Video Macrebs",
+    "description": "macrebs",
     "duration": 2000
 }
 
@@ -22,8 +22,8 @@ PUT http://localhost:2525/videos/d32eac95-f96a-4e9e-8baf-58321d06a90c
 content-type: application/json
 
 {
-    "title": "Video 2 de node",
-    "description": "meu 2 video",
+    "title": "Video node",
+    "description": "Macrebs video",
     "duration": 130
 }
 

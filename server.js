@@ -5,7 +5,7 @@ const server = fastify();
 const database = new DatabaseMemory();
 
 server.post('/videos', (request, reply) => {
-    //desestruturação
+    //destructuring
     const { title, description, duration } = request.body;
     
     database.create({

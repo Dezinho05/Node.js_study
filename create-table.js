@@ -1,12 +1,13 @@
 import { sql } from './db.js'
 
-await sql`
-    CREATE TABLE (
+sql`
+    CREATE TABLE IF NOT EXISTS videos (
     title TEXT,
     description TEXT,
     duration INTEGER
     );
 `.then(() => {
-    console.log('Tabela Criada!');
+    console.log('Created!');
 });
-//node create-table.js
+
+//Terminal: node create-table.js

@@ -1,7 +1,7 @@
 {
   "name": "node_study",
   "version": "1.0.0",
-  "description": "- Sintaxe utilizada, é de uma versão mais nova do Node.js, sendo necessário informar no",
+  "description": "The syntax used comes from a newer version of Node.js",
   "main": "server.js",
   "type": "module",
   "scripts": {

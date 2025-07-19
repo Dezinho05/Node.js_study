@@ -1,14 +1,16 @@
-# Importando o Node
-Sintaxe utilizada, é de uma versão mais nova do Node.js, sendo necessário informar no package.json.
-- Comando para criar o package: (npm init -y)
-- Chave: "type"
-- Valor: "module"
+# Importing Node
+The syntax used comes from a newer version of Node.js, so it’s necessary to configure it in the package.json file.
+Command to create the package file: npm init -y
+Key: "type"
+Value: "module"
+To keep the server running and automatically reloading on every change:
 
-Para manter o servidor ativo e atualizado a cada alteração: node --watch --no-warnings server.js
-Ou adicionar na seção scripts do package.json.
+node --watch --no-warnings server.js
 
-## Dependências
-1. fastify : npm install fastify
-2. postgres : npm install postgres
-3. dotenv : npm install dotenv -D
-4. neon : npm install @neondatabase/serverless
+Or add it as a script in the scripts section of package.json.
+
+# Dependencies
+1. fastify – npm install fastify
+2. postgres – npm install postgres
+3. dotenv – npm install dotenv -D
+4. neon – npm install @neondatabase/serverless

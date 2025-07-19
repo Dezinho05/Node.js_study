@@ -2,8 +2,7 @@ import { randomUUID } from 'node:crypto'
 
 export class DatabaseMemory {
     #videos = new Map();
-    //# visivel somente dentro da classe
-
+    //# visibility: class only
     list(search){
         return Array.from(this.#videos.entries())
         .map((videoArray)=>{
