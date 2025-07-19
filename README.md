@@ -9,3 +9,6 @@ Ou adicionar na seção scripts do package.json.
 
 ## Dependências
 1. fastify : npm install fastify
+2. postgres : npm install postgres
+3. dotenv : npm install dotenv -D
+4. neon : npm install @neondatabase/serverless

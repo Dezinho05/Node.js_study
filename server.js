@@ -1,39 +1,48 @@
-//  NODE
-// import {createServer} from 'node:http'
-
-// const server = createServer((req, res ) => {
-//     res.write('oi');
-//     return res.end();
-// });
-
-// server.listen(2525);
-
-// Fastify
 import { fastify } from 'fastify'
 import { DatabaseMemory } from './database-memory.js'
 
 const server = fastify();
 const database = new DatabaseMemory();
 
-server.post('/videos', (response, reply) => {
+server.post('/videos', (request, reply) => {
+    //desestruturação
+    const { title, description, duration } = request.body;
+    
     database.create({
-        title: 'Video 01',
-        description: 'Este é o primeiro video',
-        duration: 100,
+        title: title,
+        //short sintaxe if key.name = value.name
+        description,
+        duration,
     });
     return reply.status(201).send();
 });
 
-server.get('/videos/:id', () => {
-    return "HEY David"
+server.get('/videos', (request) => {
+    const search = request.query.search;
+    const videos = database.list(search);
+    return videos;
+    //return reply.send(videos);
 });
 
-server.put('/videos/:id', () => {
-    return "HEY Kaique"
+server.put('/videos/:id', (request, reply) => {
+    const videoId = request.params.id;
+    const { title, description, duration } = request.body;
+
+    database.update(videoId, {
+        title,
+        description,
+        duration
+    });
+
+    return reply.status(204).send();
 });
 
-server.delete('/videos/:id', () => {
-    return "HEY Kaique"
+server.delete('/videos/:id', (request, reply) => {
+    const videoID = request.params.id
+
+    database.delete(videoID);
+
+    return reply.status(204).send();
 });
 
 server.listen({
