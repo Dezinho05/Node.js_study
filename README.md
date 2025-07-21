@@ -17,4 +17,4 @@ Or add it as a script in the scripts section of package.json.
 
 # Services
 - __NEON__ for Database in cloud;
-- __RENDER__ for Deploy;
+- __RENDER__ for continuous deployment (CD);
