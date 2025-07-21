@@ -14,3 +14,7 @@ Or add it as a script in the scripts section of package.json.
 2. postgres – npm install postgres
 3. dotenv – npm install dotenv -D
 4. neon – npm install @neondatabase/serverless
+
+# Services
+- __NEON__ for Database in cloud;
+- __RENDER__ for Deploy;

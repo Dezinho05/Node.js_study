@@ -3,8 +3,8 @@ POST http://localhost:2525/videos
 content-type: application/json
 
 {
-    "title": "Video Macrebs",
-    "description": "macrebs",
+    "title": "Video NODE",
+    "description": "macrebs node",
     "duration": 2000
 }
 
@@ -14,19 +14,19 @@ GET  http://localhost:2525/videos
 
 ###
 
-GET http://localhost:2525/videos?abacate=node
+GET http://localhost:2525/videos?search=node
 
 ###
 
-PUT http://localhost:2525/videos/d32eac95-f96a-4e9e-8baf-58321d06a90c
+PUT http://localhost:2525/videos/79accfdc-9ffa-4341-a51c-f8c55af33731
 content-type: application/json
 
 {
-    "title": "Video node",
-    "description": "Macrebs video",
-    "duration": 130
+    "title": "Video Macrebs +",
+    "description": "Macrebs plus",
+    "duration": 260
 }
 
 ###
 
-DELETE http://localhost:2525/videos/d32eac95-f96a-4e9e-8baf-58321d06a90c
+DELETE http://localhost:2525/videos/79accfdc-9ffa-4341-a51c-f8c55af33731
